@@ -226,7 +226,7 @@ export default function TechnologyStack() {
                       >
                         {group.techs.map((t, tIdx) => (
                           <span key={tIdx} className="text-slate-300 font-medium flex items-center gap-3">
-                            <span className="w-1.5 h-1.5 rounded-full bg-sky-400 shrink-0 shadow-[0_0_8px_rgba(56,189,248,0.8)]"></span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-sky-400 shrink-0 shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>
                             {t}
                           </span>
                         ))}
