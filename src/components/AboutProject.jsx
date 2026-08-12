@@ -42,7 +42,7 @@ export default function AboutProject() {
               The Thinking Behind <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-400 italic">Hispan</span>
             </h2>
           </div>
-          <div className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal lg:pt-2">
+          <div className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
             <p>
               At its core, Hispan is about bringing every moving part of manufacturing into one place. From production and inventory to utilities, machine complaints, wastage, and reporting, the platform connects essential operations into a seamless experience—making complex processes easier to manage and giving teams a clearer picture of the bigger operation.
             </p>

@@ -27,7 +27,7 @@ export default function BusinessImpact() {
               Hispan gave Lazza a stronger operational foundation for managing a growing manufacturing network.
             </p>
           </div>
-          <div className="lg:pt-2">
+          <div>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
               We brought greater structure and visibility to everyday factory operations, helping teams work more consistently across facilities, respond to issues faster, and make decisions with a clearer understanding of overall performance. We also introduced AI-powered insights and centralized analytics to turn operational data into actionable intelligence, helping improve efficiency while maintaining complete visibility across production facilities. Together, these capabilities created a more connected and scalable way of working, giving Lazza the foundation to manage its growing manufacturing operations with greater confidence.
             </p>

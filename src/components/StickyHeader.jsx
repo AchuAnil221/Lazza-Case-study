@@ -76,7 +76,7 @@ export default function StickyHeader({ activeSection }) {
             <span className={`transition-all duration-700 ease-in-out overflow-hidden text-emerald-400 ${
               isDarkSection ? 'max-w-[300px] opacity-100 ml-2' : 'max-w-0 opacity-0 ml-0'
             }`}>
-              - Behind <span className="italic">the</span> Build
+              Behind <span className="italic">the</span> Build
             </span>
           </span>
         </div>

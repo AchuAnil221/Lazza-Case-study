@@ -47,7 +47,7 @@ export default function OurSolution() {
               The <span className="text-emerald-500 italic">Making</span>
             </h2>
           </div>
-          <div className="lg:pt-2">
+          <div>
             <p className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug mb-4">
               Hispan delivers a unified enterprise platform that centralizes every critical manufacturing operation into <span className="text-emerald-500 italic">a single intelligent dashboard</span>.
             </p>
