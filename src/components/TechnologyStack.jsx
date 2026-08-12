@@ -94,8 +94,8 @@ export default function TechnologyStack() {
   const deliveredTranslate = 100 - scrollProgress * 200;
 
   return (
-    <div id="technology" className="relative h-[500vh] bg-slate-900" ref={containerRef}>
-      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center bg-slate-900">
+    <div id="technology" className="relative h-[500vh] bg-emerald-950" ref={containerRef}>
+      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center bg-emerald-950">
         {/* Centered container for perfect alignment */}
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden z-0 pointer-events-none">
           <div className="relative w-full h-full">
@@ -226,7 +226,7 @@ export default function TechnologyStack() {
                       >
                         {group.techs.map((t, tIdx) => (
                           <span key={tIdx} className="text-slate-300 font-medium flex items-center gap-3">
-                            <span className="w-1.5 h-1.5 rounded-full bg-sky-400 shrink-0 shadow-[0_0_8px_rgba(56,189,248,0.8)]"></span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-sky-400 shrink-0 shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>
                             {t}
                           </span>
                         ))}

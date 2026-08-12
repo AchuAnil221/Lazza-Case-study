@@ -9,7 +9,7 @@ const mapRange = (val, inMin, inMax, outMin, outMax) => {
 const easeInOutCubic = t => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 
 const THEME_COLORS = [
-  {r: 6, g: 182, b: 212}     // Static Cyan
+  {r: 16, g: 185, b: 129}    // Static Emerald Green (replaces Cyan)
 ];
 
 const lerpColor = (c1, c2, t) => {

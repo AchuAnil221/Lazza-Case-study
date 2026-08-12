@@ -1,3 +1,5 @@
+import colors from 'tailwindcss/colors';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -8,6 +10,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        sky: colors.emerald,
         brand: {
           bg: '#080B11',
           surface: '#0E131F',
