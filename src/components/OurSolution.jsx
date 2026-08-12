@@ -40,17 +40,21 @@ export default function OurSolution() {
     <section id="solution" className="pt-32 lg:pt-48 pb-12 bg-[#FAFAFC]">
       <div className="max-w-7xl mx-auto px-6 md:px-12 mb-16 lg:mb-24">
         
-        {/* Header and Statements Center Aligned */}
-        <div className="flex flex-col items-center text-center max-w-6xl mx-auto space-y-6">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
-            The <span className="text-emerald-500 italic">Making</span>
-          </h2>
-          <p className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug max-w-5xl">
-            Hispan delivers a unified enterprise platform that centralizes every critical manufacturing operation into <span className="text-emerald-500 italic">a single intelligent dashboard</span>.
-          </p>
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-5xl">
-            The platform combines operational monitoring, inventory workflows, analytics, reporting, secure role management, and AI-powered insights to help organizations improve operational efficiency and maintain complete visibility across all production facilities.
-          </p>
+        {/* Header and Statements - Two-column editorial layout */}
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
+              The <span className="text-emerald-500 italic">Making</span>
+            </h2>
+          </div>
+          <div className="lg:pt-2">
+            <p className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug mb-4">
+              Hispan delivers a unified enterprise platform that centralizes every critical manufacturing operation into <span className="text-emerald-500 italic">a single intelligent dashboard</span>.
+            </p>
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
+              The platform combines operational monitoring, inventory workflows, analytics, reporting, secure role management, and AI-powered insights to help organizations improve operational efficiency and maintain complete visibility across all production facilities.
+            </p>
+          </div>
         </div>
       </div>
 

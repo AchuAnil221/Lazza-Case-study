@@ -35,13 +35,14 @@ export default function AboutProject() {
       <section id="overview" className="pt-24 pb-12 md:pt-32 md:pb-16 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
         
-        {/* Header & Copy */}
-        <div className="max-w-4xl mx-auto text-center mb-0">
-
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight mb-8">
-            The Thinking Behind <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-400 italic">Hispan</span>
-          </h2>
-          <div className="space-y-6 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+        {/* Header & Copy — Two-column editorial layout */}
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start mb-0">
+          <div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
+              The Thinking Behind <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-400 italic">Hispan</span>
+            </h2>
+          </div>
+          <div className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal lg:pt-2">
             <p>
               At its core, Hispan is about bringing every moving part of manufacturing into one place. From production and inventory to utilities, machine complaints, wastage, and reporting, the platform connects essential operations into a seamless experience—making complex processes easier to manage and giving teams a clearer picture of the bigger operation.
             </p>

@@ -51,15 +51,17 @@ export default function BusinessChallenge() {
     <section id="challenge" ref={sectionRef} className="pt-24 pb-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         
-        {/* Editorial Header */}
-        <div className="mb-20 w-full text-center flex flex-col items-center">
+        {/* Editorial Header - Two-column layout */}
+        <div className={`mb-20 w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start`}>
           
-          <h3 className={`text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-snug mb-8 ${getAnimClass('delay-[100ms]')}`}>
-            When the Factory Grows,<br />
-            <span className="text-sky-500 italic">So Does the Complexity.</span>
-          </h3>
+          <div>
+            <h3 className={`text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-snug ${getAnimClass('delay-[100ms]')}`}>
+              When the Factory Grows,<br />
+              <span className="text-sky-500 italic">So Does the Complexity.</span>
+            </h3>
+          </div>
 
-          <div className={`max-w-4xl space-y-6 text-lg sm:text-xl text-slate-600 leading-relaxed font-normal ${getAnimClass('delay-[200ms]')}`}>
+          <div className={`text-lg sm:text-xl text-slate-600 leading-relaxed font-normal lg:pt-2 ${getAnimClass('delay-[200ms]')}`}>
             <p>
               As Lazza’s manufacturing operations expanded across multiple facilities, managing day-to-day activities became increasingly complex. Teams needed better visibility across factories, while critical operational information remained spread across different processes.
             </p>
