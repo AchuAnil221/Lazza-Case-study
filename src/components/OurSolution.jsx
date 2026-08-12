@@ -52,7 +52,7 @@ export default function OurSolution() {
       {/* Horizontal Expansion Animation */}
       <div ref={sectionRef} className="w-full flex justify-center">
         <div 
-          className="w-full overflow-hidden transition-all duration-75 ease-linear will-change-transform bg-slate-900"
+          className="w-full overflow-hidden will-change-transform bg-slate-900"
           style={{
             // Crops the left and right sides, expanding outward as you scroll
             clipPath: `inset(0% ${(1 - expandProgress) * 25}% 0% ${(1 - expandProgress) * 25}%)`,
