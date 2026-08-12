@@ -3,6 +3,7 @@ import { CheckCircle2, ShieldCheck, Zap, Activity, Cpu, Bot, FileSpreadsheet, Be
 
 export default function OurSolution() {
   const [expandProgress, setExpandProgress] = useState(0);
+  const [parallaxOffset, setParallaxOffset] = useState(0);
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -23,6 +24,10 @@ export default function OurSolution() {
         // Smooth easing for natural expansion
         const easeProgress = progress < 0.5 ? 2 * progress * progress : 1 - Math.pow(-2 * progress + 2, 2) / 2;
         setExpandProgress(easeProgress);
+
+        // Calculate Parallax Offset
+        const centerOffset = (windowHeight / 2) - (rect.top + rect.height / 2);
+        setParallaxOffset(centerOffset * 0.15); // Adjust multiplier for stronger/weaker effect
       }
     };
 
@@ -32,18 +37,18 @@ export default function OurSolution() {
   }, []);
 
   return (
-    <section id="solution" className="pt-20 lg:pt-24 pb-12 bg-[#FAFAFC]">
+    <section id="solution" className="pt-32 lg:pt-48 pb-12 bg-[#FAFAFC]">
       <div className="max-w-7xl mx-auto px-6 md:px-12 mb-16 lg:mb-24">
         
         {/* Header and Statements Center Aligned */}
-        <div className="flex flex-col items-center text-center max-w-4xl mx-auto space-y-6">
+        <div className="flex flex-col items-center text-center max-w-6xl mx-auto space-y-6">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
-            The <span className="text-sky-500 italic">Making</span>
+            The <span className="text-emerald-500 italic">Making</span>
           </h2>
-          <p className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug">
-            Hispan delivers a unified enterprise platform that centralizes every critical manufacturing operation into <span className="text-sky-500 italic">a single intelligent dashboard</span>.
+          <p className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug max-w-5xl">
+            Hispan delivers a unified enterprise platform that centralizes every critical manufacturing operation into <span className="text-emerald-500 italic">a single intelligent dashboard</span>.
           </p>
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-5xl">
             The platform combines operational monitoring, inventory workflows, analytics, reporting, secure role management, and AI-powered insights to help organizations improve operational efficiency and maintain complete visibility across all production facilities.
           </p>
         </div>
@@ -52,7 +57,7 @@ export default function OurSolution() {
       {/* Horizontal Expansion Animation */}
       <div ref={sectionRef} className="w-full flex justify-center">
         <div 
-          className="w-full overflow-hidden will-change-transform bg-slate-900"
+          className="w-full overflow-hidden will-change-transform bg-emerald-950"
           style={{
             // Crops the left and right sides, expanding outward as you scroll
             clipPath: `inset(0% ${(1 - expandProgress) * 25}% 0% ${(1 - expandProgress) * 25}%)`,
@@ -65,7 +70,12 @@ export default function OurSolution() {
           <img 
             src="/assets/laptop_mockup.png" 
             alt="Hispan Dashboard on Laptop" 
-            className="w-full h-auto object-cover drop-shadow-2xl"
+            className="w-full h-auto object-cover drop-shadow-2xl transition-transform duration-75 ease-linear will-change-transform"
+            style={{
+              // We scale it up slightly so when it moves up/down it doesn't reveal hard edges, 
+              // creating a classic parallax window effect.
+              transform: `scale(1.1) translateY(${parallaxOffset}px)`
+            }}
           />
         </div>
       </div>

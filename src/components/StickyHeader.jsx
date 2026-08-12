@@ -53,25 +53,27 @@ export default function StickyHeader({ activeSection }) {
         
         {/* Ghost Logo to maintain flex layout space */}
         <div className="flex items-center gap-2 opacity-0 pointer-events-none">
-          <Factory className="w-7 h-7" />
-          <span className="font-bold text-2xl tracking-tighter leading-none whitespace-nowrap">
-            HISPAN
-          </span>
+          <img src="/hispan-logo.png" alt="Hispan Logo" className="h-8 md:h-10 w-auto" />
         </div>
 
         {/* The Animated Absolute Logo */}
         <div 
           className={`absolute top-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out flex items-center gap-2 cursor-pointer z-50 ${
             isDarkSection 
-              ? 'left-1/2 -translate-x-1/2 text-white scale-125' 
-              : `left-6 md:left-12 translate-x-0 scale-100 ${isDarkTheme ? 'text-white' : 'text-slate-900'}`
+              ? 'left-1/2 -translate-x-1/2 scale-125' 
+              : `left-6 md:left-12 translate-x-0 scale-100`
           }`}
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          <Factory className="w-7 h-7" />
+          <img 
+            src="/hispan-logo.png" 
+            alt="Hispan Logo" 
+            className={`h-8 md:h-10 w-auto transition-all duration-700 ${
+              isDarkTheme ? 'drop-shadow-[0_0_4px_rgba(255,255,255,0.25)]' : ''
+            }`} 
+          />
           <span className="font-bold text-2xl tracking-tighter leading-none whitespace-nowrap flex items-center">
-            <span>HISPAN</span>
-            <span className={`transition-all duration-700 ease-in-out overflow-hidden text-sky-400 ${
+            <span className={`transition-all duration-700 ease-in-out overflow-hidden text-emerald-400 ${
               isDarkSection ? 'max-w-[300px] opacity-100 ml-2' : 'max-w-0 opacity-0 ml-0'
             }`}>
               - Behind <span className="italic">the</span> Build

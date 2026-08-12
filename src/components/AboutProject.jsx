@@ -39,7 +39,7 @@ export default function AboutProject() {
         <div className="max-w-4xl mx-auto text-center mb-0">
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight mb-8">
-            The Thinking Behind <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-400 italic">Hispan</span>
+            The Thinking Behind <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-400 italic">Hispan</span>
           </h2>
           <div className="space-y-6 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
             <p>
@@ -53,7 +53,7 @@ export default function AboutProject() {
           
           {/* Card 01 */}
           <div className="flex flex-col items-start group cursor-default hover:-translate-y-2 transition-all duration-300">
-            <Factory className="w-6 h-6 text-blue-600 mb-6 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
+            <Factory className="w-6 h-6 text-emerald-600 mb-6 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
             <h3 className="text-[15px] lg:text-base font-bold text-slate-900 mb-4 tracking-tight uppercase">MULTI-FACTORY OPERATIONS</h3>
             <p className="text-[14px] lg:text-[15px] text-slate-500 leading-relaxed font-normal">
               Centralized management of multiple manufacturing facilities with clear visibility into factory-specific operations, costs, and performance.
@@ -62,7 +62,7 @@ export default function AboutProject() {
 
           {/* Card 02 */}
           <div className="flex flex-col items-start group cursor-default hover:-translate-y-2 transition-all duration-300">
-            <Zap className="w-6 h-6 text-blue-600 mb-6 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
+            <Zap className="w-6 h-6 text-emerald-600 mb-6 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
             <h3 className="text-[15px] lg:text-base font-bold text-slate-900 mb-4 tracking-tight uppercase">UTILITY MONITORING</h3>
             <p className="text-[14px] lg:text-[15px] text-slate-500 leading-relaxed font-normal">
               Detailed monitoring of electricity, diesel, water, gas, and solar consumption across factory operations.
@@ -71,7 +71,7 @@ export default function AboutProject() {
 
           {/* Card 03 */}
           <div className="flex flex-col items-start group cursor-default hover:-translate-y-2 transition-all duration-300">
-            <LineChart className="w-6 h-6 text-blue-600 mb-6 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
+            <LineChart className="w-6 h-6 text-emerald-600 mb-6 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
             <h3 className="text-[15px] lg:text-base font-bold text-slate-900 mb-4 tracking-tight uppercase">PRODUCTION & WASTAGE</h3>
             <p className="text-[14px] lg:text-[15px] text-slate-500 leading-relaxed font-normal">
               Better visibility into mix production and product wastage through production tracking, performance monitoring, and threshold-based alerts.
@@ -80,7 +80,7 @@ export default function AboutProject() {
 
           {/* Card 04 */}
           <div className="flex flex-col items-start group cursor-default hover:-translate-y-2 transition-all duration-300">
-            <Settings className="w-6 h-6 text-blue-600 mb-6 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
+            <Settings className="w-6 h-6 text-emerald-600 mb-6 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
             <h3 className="text-[15px] lg:text-base font-bold text-slate-900 mb-4 tracking-tight uppercase">MACHINE COMPLAINTS</h3>
             <p className="text-[14px] lg:text-[15px] text-slate-500 leading-relaxed font-normal">
               A structured process for raising, assigning, tracking, and resolving machine-related complaints across factory operations.
@@ -89,7 +89,7 @@ export default function AboutProject() {
 
           {/* Card 05 */}
           <div className="flex flex-col items-start group cursor-default hover:-translate-y-2 transition-all duration-300">
-            <Package className="w-6 h-6 text-blue-600 mb-6 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
+            <Package className="w-6 h-6 text-emerald-600 mb-6 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
             <h3 className="text-[15px] lg:text-base font-bold text-slate-900 mb-4 tracking-tight uppercase">INVENTORY & SPARES</h3>
             <p className="text-[14px] lg:text-[15px] text-slate-500 leading-relaxed font-normal">
               Centralized management of spare parts, purchase orders, stock availability, and inventory movement throughout the spares lifecycle.
@@ -98,7 +98,7 @@ export default function AboutProject() {
 
           {/* Card 06 */}
           <div className="flex flex-col items-start group cursor-default hover:-translate-y-2 transition-all duration-300">
-            <PieChart className="w-6 h-6 text-blue-600 mb-6 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
+            <PieChart className="w-6 h-6 text-emerald-600 mb-6 group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
             <h3 className="text-[15px] lg:text-base font-bold text-slate-900 mb-4 tracking-tight uppercase">OPERATIONAL INSIGHTS</h3>
             <p className="text-[14px] lg:text-[15px] text-slate-500 leading-relaxed font-normal">
               Role-specific dashboards, reports, and AI-powered analytics that turn factory data into clear and actionable operational insights.
