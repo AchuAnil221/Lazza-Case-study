@@ -94,8 +94,8 @@ export default function TechnologyStack() {
   const deliveredTranslate = 100 - scrollProgress * 200;
 
   return (
-    <div id="technology" className="relative h-[500vh] bg-slate-900" ref={containerRef}>
-      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center bg-slate-900">
+    <div id="technology" className="relative h-[500vh] bg-emerald-950" ref={containerRef}>
+      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center bg-emerald-950">
         {/* Centered container for perfect alignment */}
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden z-0 pointer-events-none">
           <div className="relative w-full h-full">
