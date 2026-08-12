@@ -56,8 +56,10 @@ export default function OurSolution() {
           style={{
             // Crops the left and right sides, expanding outward as you scroll
             clipPath: `inset(0% ${(1 - expandProgress) * 25}% 0% ${(1 - expandProgress) * 25}%)`,
+            WebkitClipPath: `inset(0% ${(1 - expandProgress) * 25}% 0% ${(1 - expandProgress) * 25}%)`,
             // Slight scale pop to make the expansion feel physical
-            transform: `scale(${0.9 + (expandProgress * 0.1)})`
+            transform: `scale(${0.9 + (expandProgress * 0.1)}) translateZ(0)`,
+            WebkitTransform: `scale(${0.9 + (expandProgress * 0.1)}) translateZ(0)`
           }}
         >
           <img 
