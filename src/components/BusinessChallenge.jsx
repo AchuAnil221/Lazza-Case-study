@@ -61,7 +61,7 @@ export default function BusinessChallenge() {
             </h3>
           </div>
 
-          <div className={`text-lg sm:text-xl text-slate-600 leading-relaxed font-normal lg:pt-2 ${getAnimClass('delay-[200ms]')}`}>
+          <div className={`text-lg sm:text-xl text-slate-600 leading-relaxed font-normal ${getAnimClass('delay-[200ms]')}`}>
             <p>
               As Lazza’s manufacturing operations expanded across multiple facilities, managing day-to-day activities became increasingly complex. Teams needed better visibility across factories, while critical operational information remained spread across different processes.
             </p>
@@ -69,7 +69,7 @@ export default function BusinessChallenge() {
         </div>
 
         {/* CHALLENGE GRID */}
-        <div className={`relative pt-12 pb-12 border-t border-b border-slate-200/80 transition-all duration-1000 ease-out delay-[300ms] ${isVisible ? 'border-opacity-100' : 'border-opacity-0'}`}>
+        <div className={`relative pt-12 pb-12 border-b border-slate-200/80 transition-all duration-1000 ease-out delay-[300ms] ${isVisible ? 'border-opacity-100' : 'border-opacity-0'}`}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
             {challenges.map((item, idx) => {
               const delayMs = `delay-[${(idx + 4) * 100}ms]`;
